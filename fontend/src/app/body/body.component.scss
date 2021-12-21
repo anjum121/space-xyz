@@ -1,0 +1,27 @@
+.body-holder {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15%;
+
+  h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  p {
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  a {
+    text-decoration: none;
+    background: green;
+    border: 1px solid #037203;
+    color: #fff;
+    padding: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}

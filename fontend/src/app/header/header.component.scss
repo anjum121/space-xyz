@@ -1,0 +1,36 @@
+.header-holder {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .logo {
+    padding: 10px;
+    margin-right: 20px;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+  }
+
+  .menu {
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      li {
+        list-style: none;
+        padding: 10px;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+}
