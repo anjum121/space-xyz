@@ -1,4 +1,10 @@
-<div class="body">
+<div
+  class="body"
+  [ngStyle]="{
+    background:
+      'url(' + backgroundImage + ') #000 no-repeat center bottom / contain'
+  }"
+>
   <div class="container">
     <app-header></app-header>
     <router-outlet></router-outlet>

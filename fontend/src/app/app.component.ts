@@ -1,6 +1,4 @@
-import { DOCUMENT } from '@angular/common';
-import { Component, Inject } from '@angular/core';
-
+import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +6,9 @@ import { Component, Inject } from '@angular/core';
 })
 export class AppComponent {
   title = 'space-xyz';
-  constructor(@Inject(DOCUMENT) private document: any) {
-    this.document.body.classList.add('full-background');
+  backgroundImage = null;
+
+  constructor() {
+    this.backgroundImage = '../../assets/f9_feature.webp';
   }
 }
