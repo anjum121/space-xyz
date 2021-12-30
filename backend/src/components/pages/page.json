@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_pages_pages",
+  "info": {
+    "displayName": "page",
+    "icon": "biking"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "richtext"
+    },
+    "isVisible": {
+      "type": "boolean"
+    },
+    "background": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
