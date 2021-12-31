@@ -4,11 +4,11 @@ import { BodyComponent } from './body/body.component';
 
 const routes: Routes = [
   {
-    path: ':id',
+    path: ':url?:id',
     component: BodyComponent,
   },
   {
-    path: '',
+    path: '*.*',
     component: BodyComponent,
   },
 ];

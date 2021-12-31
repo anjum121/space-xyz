@@ -1,5 +1,5 @@
-<div class="body-holder">
-  <h1>Some Name comes form server</h1>
-  <p>Some text comes from server</p>
-  <a href="">Book it now</a>
+<div class="body-holder" @fade>
+  <h1>{{ data[0]?.attributes?.page?.heading }}</h1>
+  <p>{{ data[0]?.attributes?.page?.subTitle }}</p>
+  <a href="" (click)="booking($event)">Notify when available </a>
 </div>

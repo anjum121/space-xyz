@@ -4,10 +4,23 @@
   </div>
   <div class="menu">
     <ul>
-      <li>
-        <a routerLink="/" routerLinkActive="active">link 1</a>
+      <li *ngFor="let item of menu">
+        <a
+          href=""
+          [title]="item?.attributes?.Title"
+          (click)="onClick(item, $event)"
+          >{{ item?.attributes?.Title }}</a
+        >
+
+        <!-- <a
+          [routerLink]="item?.url"
+          [queryParams]="{ id: item?.id }"
+          routerLinkActive="active"
+          [title]="item?.attributes?.Title"
+          >{{ item?.attributes?.Title }}</a
+        > -->
       </li>
-      <li>
+      <!-- <li>
         <a routerLink="/first-component" routerLinkActive="active">link 1</a>
       </li>
       <li>
@@ -18,7 +31,7 @@
       </li>
       <li>
         <a routerLink="/first-component" routerLinkActive="active">link 1</a>
-      </li>
+      </li> -->
     </ul>
   </div>
 </div>
